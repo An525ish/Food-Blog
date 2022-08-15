@@ -1,0 +1,219 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family :Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+header{
+    padding : 1.5% 5%;
+    display : flex;
+    justify-content: space-between;
+}
+ul{
+    list-style : none;
+}
+li{
+    display: inline;
+    padding-right : 1em;
+    font-size: 1.25em;
+}
+a{
+    text-decoration: none;
+    color : #000;
+}
+.nav{
+    align-self : center;
+}
+main{
+    background-color : rgb(123, 158, 83);
+    height : 30em;
+    position: relative; 
+}
+main img{
+    width : 70%;
+    height : 30em;
+}
+main .desc{
+    min-height : 8rem;
+    width : 27%;
+    min-width: 20rem;
+    background-color: #fff;
+    border-radius : 2px;
+    padding  : 2%;
+    position: absolute;
+    /* left : 60%;
+    bottom : 10em; */
+    right : 10%;
+    top : 25%;
+    /* transform : translate(60em, -22em); */
+}
+
+.desc p{
+    color : grey;
+}
+
+
+#about{
+    padding : 5%;
+    display: flex;
+    gap : 5em;
+}
+section{
+    width: 60%;
+    display: flex;
+    flex-wrap : wrap;
+    gap : 2em;
+    justify-content: space-around;
+}
+.cards{
+    background-color: #f5f3fe;
+    height : auto;
+    width : 15em;
+    padding : 5%;
+
+}
+.cards img{
+    width : 15em;
+    margin-bottom : 1em;
+}
+.cards p, h2{
+    margin-bottom : 1em;
+}
+aside{
+    width : 40%;
+    display : flex;
+    flex-direction : column;
+}
+#about a{
+    text-decoration: underline;
+}
+.date{
+    color : grey;
+}
+.sec1{
+    border-bottom : 1px solid grey;
+}
+.sec1, .sec2{
+    display : flex;
+    flex-direction: column;
+    margin : 0 auto 1em;
+    gap : 1em;
+}
+.sec1 div, .sec2 div{
+    width : auto;
+    height : auto;
+    padding : 5% 5% 5% 0;
+}
+aside img{
+    width : 8em;
+    float : left;
+    margin-right : 1em;
+}
+.pagination{
+    display: inline-block;
+    padding: 2%;
+    margin-left : 3em;
+}
+.pagination .active{
+    border : 1px solid grey;
+    background-color: #d8d7d8;
+}
+.pagination a{
+    padding : 5px;
+}
+.pagination a:hover{
+    background-color: #d8d7d8;
+    border : 1px solid grey;
+}
+footer{
+    display: flex;
+    padding : 2%;
+    justify-content: space-around;
+    background-color: #232323;
+}
+footer li{
+    display: block;
+    font-size : 1em;
+}
+footer h1{
+    color : #fff;
+    padding-bottom : 1em;
+}
+footer p, footer a{
+    color : rgb(158, 153, 153);
+}
+footer a:hover{
+    color : white;
+}
+.blog{
+    flex : 2;
+    padding : 5%;
+
+}
+.post{
+    flex : 1;
+    padding : 5%;
+    line-height : 2em;
+
+}
+.comment{
+    flex : 1;
+    padding : 5% 1%;
+    line-height : 2em;
+}
+.show{
+    display: none;
+}
+@media (max-width : 690px){
+    header{
+        background-color : rgb(136, 185, 80);
+        flex-wrap: wrap;
+    }
+    .logo{
+        width : 90%;
+    }
+    .icon{
+        justify-self: end;
+    }
+    .nav{
+        width: 100%;
+    }
+    a:hover{
+        color : white;
+        transition: .3s ease-in-out;
+    }
+    .show{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        gap : 1em;
+        text-align: center;
+    }
+    #about{
+        flex-direction: column;
+    }
+    section{
+        width : 100%;
+    }
+    .cards{
+        width : 80%;
+        text-align: center;
+    }
+    aside{
+        width : 100%;
+        margin : 0 1.5em;
+    }
+    footer{
+        flex-direction: column;
+        margin-top: 1em;
+        text-align: center;
+    }
+}
